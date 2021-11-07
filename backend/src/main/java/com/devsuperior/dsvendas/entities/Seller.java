@@ -1,6 +1,7 @@
 package com.devsuperior.dsvendas.entities;
 
-import java.util.Arraylist;
+
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.persistence.Entity;
@@ -20,9 +21,9 @@ public class Seller {
 	private String name;
 	
 	@OneToMany(mappedBy = "seller")
-	private List<Sale> sales = new ArrayList<>()
+	private List<Sale> sales = new ArrayList<>();
 	
-	public seller() {		
+	public Seller() {		
 	}
 
 	public Seller(Long id, String name) {
