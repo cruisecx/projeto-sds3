@@ -14,7 +14,6 @@ public class SaleSuccessDTO implements Serializable{
 	public SaleSuccessDTO() {
 	}
 	
-	
 
 	public SaleSuccessDTO(Seller seller, Long visited, Long deals) {
 		sellerName = seller.getName();
@@ -22,12 +21,6 @@ public class SaleSuccessDTO implements Serializable{
 		this.deals = deals;
 	}
 
-
-
-	public SaleSuccessDTO(Seller seller, Double sum) {
-		this.sellerName = seller.getName();
-		this.sum = sum;
-	}
 
 	public String getSellerName() {
 		return sellerName;
@@ -59,9 +52,5 @@ public class SaleSuccessDTO implements Serializable{
 
 	public void setDeals(Long deals) {
 		this.deals = deals;
-	}
-	
-	
-	
-		
+	}		
 }
